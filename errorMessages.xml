@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+-->
+<Messages>
+  <spanErrorMsgType>Please select Request type.</spanErrorMsgType>
+  <spanErrorMsgLength>Description should not exceed 255 characters.</spanErrorMsgLength>
+  <spanErrorMsgText>Invalid Name</spanErrorMsgText>
+  <exceededName>Name field should not exceed more than 50 characters.</exceededName>
+  <exceededMail>E-mail field should not exceed more than 100 characters</exceededMail>
+  <spanErrorMsgPhoneEmail>Email or Phone number is required.</spanErrorMsgPhoneEmail>
+  <spanErrorMsgValidEmail>Please enter valid EmailID.</spanErrorMsgValidEmail>
+  <spanErrorMsgValidPhone>Please enter 10-digit phone number in "9999999999" format.</spanErrorMsgValidPhone>
+  <textComment>Please enter Comment.</textComment>
+  <textCommentLimit>Comment should not exceed 250 characters.</textCommentLimit>
+  <mapLocation>Please select a location on map to create a request.</mapLocation>
+  <mapAddress>Enter address to locate.</mapAddress>
+  <blankService>Enter service request number to locate.</blankService>
+  <addressFormat>Please enter address in [Address, City, State, Zip] or in [Address, Zip] format.</addressFormat>
+  <unableLocate>Unable to locate specified address.</unableLocate>
+  <unableService>Unable to locate specified service request number.</unableService>
+  <tinyURLEngine>Bitly API is not able to generate tiny URL.</tinyURLEngine>
+  <timeOut>The browser is unable to supply a position at this time.</timeOut>
+  <positionUnavailable>Position unavailable.</positionUnavailable>
+  <permissionDenied>Permission denied.</permissionDenied>
+  <unknownError>Unknown error.</unknownError>
+  <dataNotAvailable>You are currently outside the supported area.</dataNotAvailable>
+  <commentUnassigned>Adding comments are only available for Unassigned requests.</commentUnassigned>
+</Messages>

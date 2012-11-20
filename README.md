@@ -5,6 +5,8 @@ Public Information Center is a configuration of ArcGIS Server and a JavaScript a
 
 [Try the Public Information Center application](http://localgovtemplates2.esri.com/publicinfocenter/default.htm)
 
+![Image of Public Information Center application](https://raw.github.com/Esri/park-and-recreation-finder/master/public-information-center.png "Public Information Center application")
+
 ## Features
 
 * Find a specific address or service request
@@ -71,4 +73,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 A copy of the license is available in the repository's
-[license.txt](https://github.com/Esri/public-information-center/blob/master/license.txt) file.
+[license.txt](https://raw.github.com/Esri/public-information-center/master/license.txt) file.

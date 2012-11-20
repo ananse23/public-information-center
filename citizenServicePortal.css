@@ -1,0 +1,1117 @@
+﻿/* This file contains the style settings for "Citizen Service Portal" template */
+/*
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+ */
+/* Use this file to perform the following: */
+
+/* 1. Set the body styles                      - { Style(s) to look for: html, body } */
+/* 2. Set the header styles                    - { Style(s) to look for: headerBackground,header,headerContent,headerIcon,text,textBox,disabledText,imgApp,lblAppName,
+                                                                         tdAddress,divAddressContainer,divAddress,imgLocateAddress}*/
+/* 3. Set the loading styles                   - { Style(s) to look for: divMessage, dialogLoadMessage_underlay,dialogAlertMessage_underlay,divLoadingIndicator}*/
+/* 4. Set the styles for dijit buttons         - { Style(s) to look for: claro .dijitButton .dijitButtonNode,claro .dijitButtonHover .dijitButtonNode,
+                                                                         claro .dijitButtonActive .dijitButtonNode,claro .dijitToggleButton .dijitButtonNode,claro .dijitToggleButtonHover .dijitButtonNode,claro .dijitToggleButtonChecked .dijitButtonNode,claro .dijitDialogPaneContent,claro .dijitDialogPaneContent,
+                                                                         dijitDialogCloseIcon,claro .dijitContentPane,claro .dijitTooltipContainer,claro .dijitTooltipConnector}*/
+/* 5. Set the styles for basemap container     - { Style(s) to look for: divBaseMapTitleContainer,basemapThumbnail,baseMapContainerNode,basemapLabel,divBaseMapContainer,selectedBaseMap}*/
+/* 6. Set the styles for alert doialogs        - { Style(s) to look for: dijitDialogTitleBar,dialogAlertMessage_underlay,dialogAlertMessage,#dialogAlertMessage .dijitContentPane,divOk}*/
+/* 7. Set the styles for info window sprite    - { Style(s) to look for: infowindow .sprite,infowindow .titlebar,infowindow .content}*/
+/* 8. Set the styles for tab container         - { Style(s) to look for: .claro .dijitTabContainerBottom-dijitContentPane,.claro .dijitTabChecked,.claro .dijitTabChecked .dijitTabContent
+                                                                         .claro .dijitTabChecked .dijitTabContent,.claro .dijitTabContent,.claro .dijitTabPane,.claro .dijitTabContainerBottom-dijitContentpane
+                                                                         .claro .dijitTabPaneWrapper,.claro .dijitTabContainerBottom-tabs .dijitTabChecked                       */
+/* 9.Set the styles for scrollbar              - { Style(s) to look for: scrollbar_track,scrollbar_handle,scrollbar_content }*/
+/* 10.Styles for combo boxes                   - { Style(s) to look for: claro .dijitTextBox,claro .dijitTextBoxFocused .dijitInputContainer,claro .dijitComboBoxMenu .dijitMenuItemSelected,
+                                                                         claro .dijitComboBoxMenuActive .dijitMenuItemSelected,.claro .dijitMenu,.claro .dijitComboBoxMenu .dijitMenuItem}*/
+/* 11.Style for RatingStar                     - { Style(s) to look for: ratingStar,ratingStarChecked,spanRating } */
+/* 12.Style for Round corner                   - { Style(s) to look for: .rounded,span.rounded:hover,span.rounded:hover,div.rounded:hover,div.rounded:hover,.bottomborder,.solidbottomborder } */
+/* 13.Style for Text                           - { Style(s) to look for: txtArea,txtAreaMouseOver,txtBox,textBorder,wordBreak,wordBreakComments,dateWordBreak} */
+/* 14. Set the Tab container styles            - { Style(s) to look for: tabContent, tab-header,tab-header ul.tab-list,tab-header ul.tab-list li
+                                                                          tab-header ul.tab-list a, .tab-header ul.tab-list span, .tab-header ul.tab-list a.tab-active,
+                                                                          tab-header ul.tab-list span, .tab-header ul.tab-list a.tab-active, .tab-header ul.tab-list a.tab-active:hover,
+                                                                          tab-header ul.tab-list a,tab-header ul.tab-list a:hover, .divTabContent   } */
+/* 15. Set the accordian container styles      - { Style(s) to look for: divAccordionTitle,divAccordionContent, divDataContainer,divAccordionTitle
+                                                                          divAccordionContent,divDataContainer}*/
+/* 16.Set the Style for File Upload            - { Style(s) to look for: divFileUploadList, divFileUploadContent,DIV.fileinputs
+                                                                          DIV.fileUploadContainer, DIV.fileUploadContainer INPUT,divAttachmentsData } */
+/* 17.Style for Left Panel                     - { Style(s) to look for: divLeftPanelBackground,divServiceDetailPanel,divInstructions,divDetailsContainer,
+                                                                          divDetailsContent,divRequestDesription,accordionExpand,accordionCollapse,divToggleDetailExpand
+                                                                          divToggleDetailCollapse ,tdBottomRowSeperator  } */
+/* 18.Set the Application Container styles    - { Style(s) to look for: imgSocialMediaIcon,divAppContainer,divAppTriangle} */
+/* 19.Style for Row                           - { Style(s) to look for: trRowHighlight,trRowDefault} */
+/* 20.Style for Legend                        - { Style(s) to look for: divLegendBackground} */
+/* 21.Style for Esri Logo                     - { Style(s) to look for:.esriLogo } */
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Styles for body*/
+
+body, html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 11px !important;
+    overflow: hidden;
+}
+[type=text]
+{
+    font-family: Verdana;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styles for header*/
+
+.headerBackground
+{
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    background: rgba(0,0,0,0.9);
+    -pie-background: rgba(0,0,0,0.9);
+    behavior: url("PIE.htc");
+}
+
+.header
+{
+    background-color: transparent;
+    color: White;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 55px;
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+}
+
+.headerContent
+{
+    color: White;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    height: 55px;
+}
+
+.headerIcon
+{
+    background-color: transparent;
+    width: 75px;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 5px;
+}
+
+.text
+{
+    color: White;
+    font-size: 11px;
+    font-family: Verdana;
+    cursor: default !important;
+}
+
+.disabledText
+{
+    color: #8A8A8A;
+    font-size: 11px;
+    font-family: Verdana;
+    cursor: pointer;
+}
+
+.textBox
+{
+    background-color: #242422 !important;
+    border: none;
+    width: 222px;
+    color: #fff;
+    height: 30px;
+    padding: 0px !important;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 1px;
+    font-family: Verdana !important;
+}
+
+.imgApp
+{
+    width: 64px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    position: absolute;
+}
+
+.lblAppName
+{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.tdAddress
+{
+    color: White;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.divAddressContainer
+{
+    position: absolute;
+    z-index: 100;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 252px;
+    top: 43px;
+}
+
+.divAddress
+{
+    border: 1px solid #7D7D7D;
+    width: 252px;
+    background-color: Black;
+    position: relative;
+}
+
+.imgLocateAddress
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Loading styles  */
+
+.divMessage
+{
+    border: none;
+    font-family: Verdana;
+    font-size: 11px;
+    color: White;
+    background-color: Black;
+    width: 250px;
+}
+
+#dialogLoadMessage_underlay
+{
+    background-color: #000;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.20;
+    -khtml-opacity: 0.20;
+    opacity: 0.20;
+}
+
+.divLoadingIndicator
+{
+    height: 100%;
+    width: 100%;
+    display: none;
+    font-size: 11px !important;
+    font-family: Verdana;
+    background-color: Black;
+    color: White;
+    z-index: 100;
+    position: absolute;
+    bottom: 0px;
+    filter: alpha(opacity = 65);
+    -moz-opacity: 0.65;
+    -khtml-opacity: 0.65;
+    opacity: 0.65;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Styles for dijit buttons*/
+
+.claro .dijitButton .dijitButtonNode
+{
+    background-color: Black !important;
+    color: White;
+}
+
+.claro .dijitButtonHover .dijitButtonNode
+{
+    background-color: #003d7d !important;
+    color: White !important;
+}
+
+.claro .dijitButtonActive .dijitButtonNode
+{
+    background-color: #ff9f0d !important;
+    color: Black !important;
+}
+
+.claro .dijitToggleButton .dijitButtonNode
+{
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+.claro .dijitToggleButtonHover .dijitButtonNode
+{
+    background-color: #A9A9A9 !important;
+    background-image: url("images/titlebar.png") !important;
+}
+
+.claro .dijitToggleButtonChecked .dijitButtonNode
+{
+    background-color: #3F3F3F !important;
+    background-image: url("images/button.png") !important;
+}
+
+.claro .dijitDialogPaneContent
+{
+    background-color: Black !important;
+    color: White;
+}
+
+.dijitDialogCloseIcon
+{
+    background: url(images/dialogClose.png) no-repeat !important;
+    right: 8px !important;
+    width: 12px !important;
+    height: 12px !important;
+    top: 10px !important;
+}
+
+.claro .dijitContentPane
+{
+    padding: 0px !important;
+}
+
+.claro .dijitTooltipContainer
+{
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #fff !important;
+    font-size: 12px !important;
+    font-family: Verdana !important;
+    z-index: 1000;
+}
+
+.claro .dijitTooltipConnector
+{
+    width: 0px !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styles for basemap container*/
+
+.divBaseMapTitleContainer
+{
+    width: 253px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 49px;
+    right: 20px;
+    overflow: hidden;
+}
+
+.basemapThumbnail
+{
+    -moz-box-shadow: 0 0 7px #000000;
+    border: 1px solid #fff;
+    height: 67px;
+    margin: 1px;
+    width: 102px;
+    cursor: pointer;
+}
+
+.baseMapContainerNode
+{
+    float: left;
+    margin: 10px 10px 10px 10px;
+    width: 100px;
+}
+
+.basemapLabel
+{
+    background-color: transparent;
+    color: #F5F5DC;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden;
+    display: block;
+}
+
+.divBaseMapContainer
+{
+    background-color: #000;
+    overflow: auto;
+    border: 1px solid #fff !important;
+    overflow: hidden;
+}
+
+.selectedBaseMap
+{
+    -webkit-box-shadow: 0 0 15px #FFE771 !important;
+    -moz-box-shadow: 0 0 15px #FFE771 !important;
+    box-shadow: 0 0 15px #FFE771 !important;
+    filter: progid:DXImageTransform.Microsoft.Glow(color='#8EAE21', Strength='6');
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styles for alert dialogs */
+.dijitDialogTitleBar
+{
+    background: url(images/titlebar.png) !important;
+    color: White;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: Black !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+#dialogAlertMessage_underlay
+{
+    background-color: #000;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.20;
+    -khtml-opacity: 0.20;
+    opacity: 0.20;
+}
+
+.dialogAlertMessage
+{
+    width: 300px;
+}
+
+#dialogAlertMessage .dijitContentPane
+{
+    background-color: Black;
+}
+
+.divOk
+{
+    border-width: 1px;
+    color: White;
+    background-color: Black;
+    width: 50px;
+    height: 15px;
+    border-style: solid;
+    border-color: white;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Infowindow sprite styles*/
+.infowindow .sprite
+{
+    background-image: url("images/infowindow.png") !important;
+    _background-image: none !important;
+    color: White;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='images/infowindow.png') !important;
+}
+
+.infowindow .titlebar
+{
+    color: White;
+    font-size: 11px !important;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.infowindow .window .top .right .user .titlebar .title
+{
+    color: White;
+    font-size: 11px !important;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.infowindow .content
+{
+    color: White;
+    font-family: Verdana;
+    font-size: 11px !important;
+    overflow: hidden !important;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styles for tabContainer */
+.claro .dijitTabContainerBottom-dijitContentPane
+{
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+.claro .dijitTabChecked
+{
+    color: Black !important;
+}
+
+.claro .dijitTabChecked .dijitTabContent
+{
+    background-color: Orange !important;
+    color: Black !important;
+    background-position: 50% bottom !important;
+}
+
+.claro .dijitTabContainerBottom-tabs
+{
+    border-top: none !important;
+}
+
+.claro .dijitTabContent
+{
+    background-image: url(images/tabBottom.png) !important;
+    background-color: #1C1C1C !important;
+    width: 85px !important;
+    border-top: #b5bcc7 1px solid !important;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana;
+    color: White;
+    padding-bottom: 7px !important;
+    padding-top: 5px !important;
+}
+
+.claro .dijitTabPane
+{
+    border-bottom: 1px solid #fff !important;
+}
+
+.claro .dijitTabContainerBottom-dijitContentpane
+{
+    width: 300px !important;
+}
+
+
+.claro .dijitTabPaneWrapper
+{
+    background-color: transparent !important;
+    width: 297px !important;
+}
+
+.claro .dijitTabContainerBottom-tabs .dijitTabChecked
+{
+    padding-bottom: 3px !important;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Styles for scrollbar*/
+.scrollbar_track
+{
+    position: absolute;
+    right: 2px !important;
+    background-color: transparent;
+    cursor: default;
+    display: block;
+    top: 0px;
+}
+
+.scrollbar_handle
+{
+    position: relative;
+    width: 10px;
+    background-color: Silver;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+    cursor: default;
+}
+
+.scrollbar_content
+{
+    overflow: hidden;
+    width: 375px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.claro .dijitTextBox
+{
+    background-color: #000 !important;
+    color: #fff !important;
+    font-family: Tahoma, Arial;
+    font-size: 11px;
+}
+
+.claro .dijitTextBoxFocused .dijitInputContainer
+{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.claro .dijitComboBoxMenu .dijitMenuItemSelected
+{
+    background-position: 0px -177px !important;
+    background-color: #2F2F4F !important;
+    color: White !important;
+}
+
+.claro .dijitComboBoxMenuActive .dijitMenuItemSelected
+{
+    background-position: 0px -177px;
+    color: White !important;
+}
+
+.claro .dijitMenu
+{
+    background-color: Black !important;
+    color: #fff !important;
+}
+
+.claro .dijitComboBoxMenu .dijitMenuItem
+{
+    border: 0px solid #000 !important;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-family: Verdana !important;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Ratingstar */
+.ratingStar
+{
+    display: inline-block;
+    background-image: url(images/rating_empty.gif);
+    background-position: left center;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.ratingStarChecked
+{
+    background-image: url(images/rating_full.gif);
+}
+
+.spanRating
+{
+    color: White;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Style for Rounded Corners */
+.rounded
+{
+    background: transparent url(images/buttonImage.png ) no-repeat scroll;
+    clear: left;
+    font-family: Verdana;
+    font-size: 10px;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    width: 84px;
+    text-align: center;
+    color: White;
+    cursor: pointer;
+}
+
+span.rounded:hover
+{
+    background-position: 100% -25px;
+}
+
+span.rounded:hover
+{
+    background-position: 0% -25px;
+}
+div.rounded:hover
+{
+    background-position: 100% -25px;
+}
+
+div.rounded:hover
+{
+    background-position: 0% -25px;
+}
+
+
+.bottomborder
+{
+    border-bottom: 1px dotted white;
+}
+
+.solidbottomborder
+{
+    border-bottom: 1px solid #fff;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Text */
+.txtArea
+{
+    padding: 0px;
+    background-color: black;
+    padding: 0px;
+    border: 1px solid #b5bcc7;
+    width: 250px;
+    color: white;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 45px;
+    resize: none;
+}
+
+.txtAreaMouseOver
+{
+    padding: 0px;
+    background-color: black;
+    border: 1px solid #769dc0;
+    width: 250px;
+    color: white;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 45px;
+    resize: none;
+}
+
+.txtBox
+{
+    height: 20px;
+    line-height: 20px;
+    padding: 0px;
+    width: 250px;
+    color: White;
+    background-color: Black;
+    border: 1px solid #b5bcc7;
+    font-family: Verdana !important;
+    font-size: 11px !important;
+}
+
+.txtBoxMouseOver
+{
+    height: 20px;
+    line-height: 20px;
+    padding: 0px;
+    width: 250px;
+    color: White;
+    background-color: Black;
+    border: 1px solid #769dc0;
+    font-family: Verdana !important;
+    font-size: 11px !important;
+}
+
+.spanText
+{
+    color: white;
+    cursor: pointer;
+}
+
+.spanFileDetails
+{
+    color: White;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.wordBreak
+{
+    word-break: break-all;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.mailAnchor
+{
+    color: #ffffff;
+}
+wordBreakComments
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* styles for tab container */
+.tabContent
+{
+    background: transparent;
+    color: white;
+}
+
+.tab-header
+{
+    height: 32px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.tab-header ul.tab-list
+{
+    margin: 0;
+    padding: 0;
+    bottom: -1px;
+    width: 400px;
+}
+
+.nowrapTabStrip, .dijitTabContainerBottom-tabs
+{
+    width: 300px !important;
+}
+.tab-header ul.tab-list li
+{
+    display: inline;
+    list-style: none;
+    margin: 0;
+}
+
+.tab-header ul.tab-list a, .tab-header ul.tab-list span, .tab-header ul.tab-list a.tab-active
+{
+    width: 131px;
+    display: block;
+    float: left;
+    padding: 3px 0;
+    margin: 1px 2px 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.tab-header ul.tab-list span, .tab-header ul.tab-list a.tab-active, .tab-header ul.tab-list a.tab-active:hover
+{
+    background-image: url("images/tab.png") !important;
+    background-position: 0px 34px;
+    background-color: transparent;
+    color: #fff;
+    padding-bottom: 4px;
+    margin-top: 0;
+    cursor: default;
+}
+
+/* a link in a background tab */
+.tab-header ul.tab-list a
+{
+    background-image: url("images/tab.png") !important;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+/* hover on a background tab */
+.tab-header ul.tab-list a:hover
+{
+    background-color: transparent;
+    background-image: url("images/tab.png") !important;
+    color: #fff;
+}
+
+.divTabContent
+{
+    background-color: transparent;
+    color: White;
+    height: 100%;
+    width: 400px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*styles for accordian container*/
+
+.divAccordionTitle, .divAccordionContent, .divDataContainer
+{
+    position: relative;
+    width: 390px;
+}
+
+.divAccordionTitle
+{
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: Verdana;
+    color: White;
+    font-weight: bold;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    display: table-cell;
+    background-image: url(images/titlebar.png) !important;
+    background-color: Black !important;
+    -moz-user-select: none;
+}
+
+.divAccordionContent
+{
+    display: none;
+    height: 0px;
+    overflow: hidden;
+}
+
+.divDataContainer
+{
+    /*border-top: solid 1px #BBBBBB;     border-bottom: solid 1px #BBBBBB;     border-left: solid 1px #BBBBBB;     border-right: solid 1px #BBBBBB;*/
+}
+
+.tableAccordionHeader
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for File Upload  */
+
+.divFileUploadList
+{
+    max-height: 75px;
+    overflow: hidden;
+    position: relative;
+}
+
+.divFileUploadContent
+{
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.filehidden
+{
+    z-index: 2;
+    filter: alpha(opacity: 0);
+    position: relative;
+    text-align: left;
+    moz-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#divAttachmentsData
+{
+    font-size: 11px;
+    overflow: hidden;
+    height: 125px;
+}
+
+DIV.fileinputs
+{
+    left: 0px;
+    width: 300px;
+    position: relative;
+    height: 20px;
+}
+
+DIV.fileUploadContainer
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    z-index: 1;
+    left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 300px;
+    line-height: 90%;
+    padding-top: 0px;
+    position: absolute;
+    top: 0px;
+}
+
+DIV.fileUploadContainer INPUT
+{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: white;
+    background-color: Black;
+    border: 1px solid #b5bcc7;
+    width: 210px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Left Panel*/
+
+.divLeftPanelBackground
+{
+    background-color: Black !important;
+    width: 400px;
+    height: 100%;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.00;
+    -khtml-opacity: 0.90;
+    opacity: 0.90;
+    position: absolute;
+    top: 55px;
+    z-index: 100;
+}
+
+.divServiceDetailPanel
+{
+    background-color: transparent !important;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 55px;
+    z-index: 100;
+}
+
+.divInstructions
+{
+    background-color: Black;
+    height: 200px;
+    width: 390px;
+    color: White;
+    overflow: hidden;
+    position: relative;
+}
+
+#divDetailsContainer
+{
+    height: 128px;
+    overflow: hidden;
+}
+
+#divDetailsContent
+{
+    height: 128px;
+    overflow: hidden;
+}
+
+#divRequestDesription
+{
+    overflow: hidden;
+    width: 255px;
+    height: 55px;
+    font-size: 11px;
+}
+
+.accordionExpand
+{
+    background-image: url(images/accordion.png);
+    background-position: 18px 0px;
+    width: 18px;
+    height: 16px;
+}
+
+.accordionCollapse
+{
+    background-image: url(images/accordion.png);
+    background-position: 0px 0px;
+    width: 15px;
+    height: 16px;
+}
+
+.divToggleDetailExpand
+{
+    background-image: url(images/tabHandle.png);
+    background-position: 0px 0px;
+    width: 31px;
+    height: 80px;
+    position: absolute; /*background-color: transparent;filter: alpha(opacity=90);     -moz-opacity: 0.90;     -khtml-opacity: 0.90;     opacity: 0.90;*/
+    top: 80px;
+    left: 400px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.divToggleDetailCollapse
+{
+    background-image: url(images/tabHandle.png);
+    background-position: 31px 0px;
+    width: 31px;
+    height: 80px;
+    position: absolute; /*background-color: transparent;filter: alpha(opacity=90);     -moz-opacity: 0.90;     -khtml-opacity: 0.90;     opacity: 0.90;*/
+    top: 80px;
+    left: 400px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.tdBottomRowSeperator
+{
+    border-bottom: 1px dotted #c0c0c0;
+    padding-left: 10px !important;
+    cursor: pointer;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Application Container styles*/
+
+.divAppContainer
+{
+    position: absolute;
+    z-index: 100;
+    top: 49px;
+    right: 35px;
+}
+
+#divAppTriangle
+{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-top: 1px solid Transparent;
+    border-right: 20px solid Transparent;
+    border-bottom: 25px solid black;
+    border-left: 20px solid Transparent;
+    margin-right: 25px;
+}
+
+.imgSocialMediaIcon
+{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Row*/
+
+.trRowHighlight
+{
+    color: #f4f4f4;
+    background-color: #6B7172;
+}
+
+.trRowDefault
+{
+    color: #fff;
+    background-color: transparent;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Legend*/
+
+.divLegendBackground
+{
+    position: absolute;
+    z-index: 99;
+    right: 25px;
+    bottom: 10px;
+    background: rgba(0,0,0,0.8);
+    -pie-background: rgba(0,0,0,0.8);
+    behavior: url("PIE.htc");
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Style for Esri Logo*/
+
+.esriLogo
+{
+    position: absolute;
+    z-index: 100;
+    bottom: 10px;
+    left: 415px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
