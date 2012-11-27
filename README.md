@@ -1,5 +1,4 @@
 # public-information-center
-**from [Esri's ArcGIS for Local Government team](http://resources.arcgis.com/en/communities/local-government/)**
 
 Public Information Center is a configuration of ArcGIS Server and a JavaScript application that allows citizens to review activities published by the local government, submit requests for service in their community, and review social media feeds to see what is being said about their community. Initially, this application can be deployed for infrastructure agencies and uses operational layers typically published by water utilities or public infrastructure agencies. It can also be configured to support a comprehensive local government citizen service application organized for other agencies or issues.
 
@@ -40,6 +39,8 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of th
 * Microsoft ASP.NET Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
 ## Resources
+
+Learn more about Esri's [ArcGIS for Local Government maps and apps](http://resources.arcgis.com/en/communities/local-government/).
 
 Additional [information and sample data](http://www.arcgis.com/home/item.html?id=92ed4a3ad902448d844655dbc6cf8183)
 are available for the application.
