@@ -28,7 +28,6 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of th
 ### General Help
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
-
 ## Requirements
 
 ### Esri Sample Services
