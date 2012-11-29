@@ -4,7 +4,7 @@ Public Information Center is a configuration of ArcGIS Server and a JavaScript a
 
 [Try the Public Information Center application](http://localgovtemplates2.esri.com/publicinfocenter/default.htm)
 
-![Image of Public Information Center application](https://raw.github.com/Esri/public-information-center/master/public-information-center.png "Public Information Center application")
+[![Image of Public Information Center application](https://raw.github.com/Esri/public-information-center/master/public-information-center.png "Public Information Center application")](http://localgovtemplates2.esri.com/publicinfocenter/default.htm)
 
 ## Features
 
