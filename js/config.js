@@ -1,4 +1,5 @@
 ﻿/** @license
+ | Version 10.1.1
  | Copyright 2012 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
